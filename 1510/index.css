@@ -1,0 +1,25 @@
+body {
+	background-color:#E0E0FF;
+}
+div {
+	text-align: center;
+}
+a:link {
+	color:#A3C4F6;
+	text-decoration: none;
+}
+a:hover {
+	color:#FFFFFF;
+}
+h1, h2 {
+	color:#000014;
+}
+
+table {
+	border-radius: 20px;
+	background-color: #989A9E;
+}
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}

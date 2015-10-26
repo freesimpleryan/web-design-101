@@ -1,0 +1,1 @@
+$("#sebform").validate();

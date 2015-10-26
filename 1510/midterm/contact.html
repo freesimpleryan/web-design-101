@@ -1,0 +1,47 @@
+<html>
+<head>
+
+	<title>Samuel Enoch's Barbershop</title>
+	<link rel="stylesheet" type="text/css" href="css/seb.css">
+</head>
+<body>
+
+<div class="container">
+
+	<nav>
+		<ul id="navbar">
+			<li id="logo-container"><a href="index.html"><img id="logo-image" src="img/logo.png" alt="logo"></a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+	<div id="leftcol">
+	<h1>Contact Us</h1>
+		<form id="cebform">
+			<label for="name">Name:</label>
+			<input id="name" class="contactformfield"  type="text" minlength="2" required /> <br>
+			<label for="email">Email:</label>
+			<input id="email" class="contactformfield" type="email" required /><br>
+			<label for="message">Message:</label>
+			<textarea id="message" class="contactformfield" col="7" rows="10" required></textarea><br>
+			<input type="submit" id="submitbutton" value="Submit" />
+		</form>
+		<p id="result"></p>
+	</div>
+	<div id="rightcol">
+		<img class="pageimg" src="img/niccage.gif" alt="nicccage.gif" title="How fabulous you'll feel after visiting Samuel Enoch!">
+	</div>
+	</main>
+	<footer>
+		<ul id="footerbar">
+			<p>&copy 2015 Samuel Enoch</p>
+		</ul>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+</div>
+
+</body>
+</html>

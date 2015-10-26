@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ConspiriTracker - About</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="css/custom.min.css">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="css/conspiritracker.css">
+	</head>
+	<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.php" class="navbar-brand">ConspiriTracker</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+				<li><a href="about.html">About</a></li>
+				<li><a href="sites.html">Sites</a></li>
+				<li class="active"><a href="store.html">Store</a></li>
+				<li><a href="contact.html">Contact</a></li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">
+				<li><a href="checkout.html">Checkout
+				  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+				</a></li>
+			</ul>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+		<main>
+		<div class="page-header" id="banner">
+        <div class="row">
+			<div class="col-lg-8 col-md-7 col-sm-6">
+				<h1>Store</h1>
+				<p class="lead">Let others know.</p>
+			</div>         
+		</div>
+		</div>
+		
+		<!-- START CONTENT HERE -->
+		<div class="row">
+		<div class="col-xs-4 productcontainer">
+			<div class="panel panel-default">
+				<div class="panel-heading"><h3>Shirts</h3></div>
+				  <div class="panel-body">
+					<img class="img-responsive center-block" src="img/shirt-thumb.PNG" />
+				  </div>
+			  <div class="panel-footer">
+					<form class="form-horizontal">
+						<div class="form-group row">
+							<label class="col-lg-2 control-label" for="shirtprice">Price:</label>
+							<div class="col-lg-4 productprice">
+								$15.00
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="shirtsize" class="col-lg-2 control-label">Size:</label>
+							<div class="col-lg-4">
+							<select class="form-control" id="shirtsize" name="shirtsize">
+								<option value="s">Small</option>
+								<option value="m">Medium</option>
+								<option value="l">Large</option>
+								<option value="xl">XL</option>
+							</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="shirtquantity" class="col-lg-2 control-label">Quantity:</label>
+							<div class="col-lg-4">
+							<input id="shirtquantity" type="number" class="form-control" min="1" placeholder="1">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-4 col-lg-offset-2">
+							<button type="button" class="btn btn-primary" id="addShirtsToCart">
+							Add to cart</button>
+							</div>
+						</div>
+					</form>
+			  </div>
+			</div>
+		</div>
+		<div class="col-xs-4 productcontainer">
+			<div class="panel panel-default">
+				<div class="panel-heading"><h3>Mugs</h3></div>
+				  <div class="panel-body">
+					<img class="img-responsive center-block" src="img/mug-thumb.PNG" />
+				  </div>
+			  <div class="panel-footer">
+					<form class="form-horizontal">
+						<div class="form-group row">
+							<label class="col-lg-2 control-label" for="mugprice">Price:</label>
+							<div class="col-lg-4 productprice">
+								$10.00
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="mugquantity" class="col-lg-2 control-label">Quantity:</label>
+							<div class="col-lg-4">
+							<input id="mugquantity" type="number" class="form-control" min="1" placeholder="1">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-4 col-lg-offset-2">
+							<button type="button" class="btn btn-primary" id="addMugsToCart">
+							Add to cart</button>
+							</div>
+						</div>
+					</form>
+			  </div>
+			</div>
+		</div>
+		</div>
+		<!-- END CONTENT HERE-->
+	
+		</main>
+		<footer>
+			<p>
+				Copyright &copy 2015 ConspiriTracker</br>
+				<a href="mailto:rbrown5262@student.gwinnetttech.edu">Ryan Brown</a>
+			</p>
+			<hr>
+			<p>Theme Bootswatch Cyborg by <a href="http://thomaspark.co/">Thomas Park<a> 
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/cart.js"></script>
+	<script type="text/javascript" src="js/store.js"></script>
+	</body>
+</html>

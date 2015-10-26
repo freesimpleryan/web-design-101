@@ -1,0 +1,16 @@
+.productthumb {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.productcontainer{
+	min-width: 200px;
+}
+
+.productprice{
+	padding-top: 9px;
+}
+
+.popover{
+	min-width: 150px;
+}
