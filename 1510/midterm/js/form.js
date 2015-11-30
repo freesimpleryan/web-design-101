@@ -1,1 +1,1 @@
-$("#sebform").validate();
+$("#sebform").validate();

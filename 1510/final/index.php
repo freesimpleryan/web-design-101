@@ -71,73 +71,75 @@ $feed->handle_content_type();
 // sure that the browser snaps into Standards Mode.
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 
-	
-		<title>ConspiriTracker</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
-		<link rel="stylesheet" href="css/custom.min.css">
+	
+		<title>ConspiriTracker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="css/custom.min.css">
 		
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body>
-	<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">ConspiriTracker</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-				<li><a href="about.html">About</a></li>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">ConspiriTracker</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+				<li><a href="about.html">About</a></li>
 				<li><a href="sites.html">Sites</a></li>
-				<li><a href="store.html">Store</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="store.html">Store</a></li>
+				<li><a href="contact.html">Contact</a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
+				<li><button type="button" class="btn btn-default" id="backButton" onclick="backbutton()">Back</button></li>
 				<li><a href="checkout.html">Checkout
 				  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				</a></li>
-			</ul>
-        </div>
-      </div>
-    </div>
-	<div class="container">
+			</ul>
+        </div>
+      </div>
+    </div>
+	<div class="container">
 		<main>
-		<div class="page-header" id="banner">
-        <div class="row">
-			<div class="col-lg-8 col-md-7 col-sm-6">
-				<h1>ConspiriTracker</h1>
-				<p class="lead">What they don't want you to know</p>
-			</div>
-          
-			</div>
+		<div class="col-lg-8 col-md-7 col-sm-6">
+		<div class="page-header" id="banner">
+        <div class="row">
+			<div class="col-lg-8 col-md-7 col-sm-6">
+				<h1>ConspiriTracker</h1>
+				<p class="lead">What they don't want you to know</p>
+			</div>
+          
+			</div>
 		</div>
-		
+		
 		<div id="sp_results" class="col-md-8">
 
 			<?php if ($success): ?>
@@ -178,10 +180,6 @@ $feed->handle_content_type();
 								}
 								echo ')</p>';
 							}
-							//if ($enclosure->get_thumbnail())
-							//{
-							//	echo '<div><img src="' . $enclosure->get_thumbnail() . '" alt="" /></div>';
-							//}
 							echo '</div>';
 							echo '<hr>';
 						}
@@ -192,18 +190,38 @@ $feed->handle_content_type();
 				<?php endforeach; ?>
 			<?php endif; ?>
 
-		</div>
-		</main>
-		<footer>
-			<p>
-				Copyright &copy 2015 ConspiriTracker by <a href="mailto:rbrown5262@student.gwinnetttech.edu">Ryan Brown</a>
-			</p>
-			<p>Theme Bootswatch Cyborg by <a href="http://thomaspark.co/">Thomas Park<a></p>
-			<p class="footnote">Powered by <a href="<?php echo SIMPLEPIE_URL; ?>"><?php echo SIMPLEPIE_NAME; ?>  </a>SimplePie is &copy; 2004&ndash;<?php echo date('Y'); ?>, Ryan Parman and Geoffrey Sneddon, and licensed under the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>.</p> 
-		</footer>
-	</div>
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-	</body>
+		</div>
+		</div>
+		<!-- Right column stuff -->
+		<div class = "col-lg-4 col-md-5 col-sm-6">
+			<h4>Featured Video</h4>
+			<iframe width="100%" height="auto" src="https://www.youtube.com/embed/Pt-agRLVGGU" frameborder="0" allowfullscreen></iframe>
+			<h4>Featured Audio</h4>
+			<iframe width="100%" height="auto" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/192565410&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			<h4>Feed Your Mind</h4>
+			<img src="img/imagemap.png" width="100%" height="auto" alt="conspiracies" usemap="#conmap">
+			<map name="conmap">
+				<area shape="rect" coords="0,0,350,350" href="https://en.wikipedia.org/wiki/Illuminati" alt="illuminati">
+				<area shape="rect" coords="0,350,350,700" href="https://en.wikipedia.org/wiki/Chemtrail_conspiracy_theory" alt="illuminati">
+				<area shape="rect" coords="0,700,350,1050" href="https://en.wikipedia.org/wiki/Flat_Earth" alt="illuminati">
+			</map>
+		</div>
+		<!-- END RIGHT COLUMN STUFF-->
+		</main>
+		<footer>
+			<p>
+				<a href="#top">Back to top</a><br>
+				Copyright &copy 2015 ConspiriTracker - <a href="mailto:rbrown5262@student.gwinnetttech.edu">Ryan Brown</a>
+			</p>
+			<hr>
+			<p>Theme Bootswatch Cyborg by <a href="http://thomaspark.co/">Thomas Park<a> <br>
+			<a href="sitemap.html">Sitemap</a>
+			</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/back.js"></script>
+	</body>
 </html>
